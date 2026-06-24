@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0f1115"/>
+  
+  <!-- House shape in gold -->
+  <!-- Roof -->
+  <polygon points="32,10 8,32 56,32" fill="#cba876"/>
+  <!-- Chimney -->
+  <rect x="38" y="13" width="6" height="12" fill="#b3915f"/>
+  <!-- House body -->
+  <rect x="12" y="30" width="40" height="24" fill="#cba876"/>
+  <!-- Door -->
+  <rect x="26" y="40" width="12" height="14" rx="6" fill="#0f1115"/>
+  <!-- Windows -->
+  <rect x="15" y="35" width="9" height="8" rx="2" fill="#0f1115"/>
+  <rect x="40" y="35" width="9" height="8" rx="2" fill="#0f1115"/>
+  <!-- Shine on window -->
+  <rect x="16" y="36" width="3" height="2" rx="1" fill="#cba876" opacity="0.5"/>
+  <rect x="41" y="36" width="3" height="2" rx="1" fill="#cba876" opacity="0.5"/>
+</svg>
