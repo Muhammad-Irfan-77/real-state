@@ -18,14 +18,21 @@
         <a href="contact.html" class="contact-btn">Contact Us</a>
     </nav>
 
-    <div class="page-header">
-        <h1>All Luxury Properties</h1>
-        <p style="color: var(--text-muted)">Browse our complete collection of premium real estate listings available right now.</p>
+    <div class="page-header reveal">
+        <h1 class="reveal-left">All Luxury Properties</h1>
+        <p style="color: var(--text-muted)" class="reveal-left">Browse our complete collection of premium real estate listings available right now.</p>
     </div>
 
     <section class="featured">
+        <div class="filter-container reveal">
+            <button class="filter-btn active" data-filter="all">All Properties</button>
+            <button class="filter-btn" data-filter="CA">California (CA)</button>
+            <button class="filter-btn" data-filter="TX">Texas (TX)</button>
+            <button class="filter-btn" data-filter="NY">New York (NY)</button>
+            <button class="filter-btn" data-filter="5 Beds">5+ Beds</button>
+        </div>
         <div class="properties-grid">
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Contemporary Suburbia" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$1,950,000</div>
@@ -38,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="Alpine Retreat" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$3,400,000</div>
@@ -51,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2092&auto=format&fit=crop" alt="The Penthouse Collection" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$8,900,000</div>
@@ -64,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="The Beverly Estate" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$4,500,000</div>
@@ -77,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Modern Glass Villa" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$2,850,000</div>
@@ -90,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="Oceanfront Mansion" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$6,200,000</div>
@@ -104,7 +111,7 @@
                 </div>
             </div>
             <!-- New Properties Added -->
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="The Grand Estate" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$12,500,000</div>
@@ -117,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="Desert Oasis Villa" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$5,100,000</div>
@@ -130,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="property-card">
+            <div class="property-card reveal">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Downtown Luxury Loft" class="property-img" />
                 <div class="property-details">
                     <div class="property-price">$1,750,000</div>
@@ -144,21 +151,21 @@
                 </div>
             </div>
             <!-- 15 New Properties Added -->
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Hilltop Mansion" class="property-img" /><div class="property-details"><div class="property-price">$7,800,000</div><h3 class="property-title">Hilltop Mansion</h3><div class="property-address">📍 110 Peak View Dr, Los Angeles, CA</div><div class="property-specs"><div class="spec-item">🛏️ 6 Beds</div><div class="spec-item">🛁 8 Baths</div><div class="spec-item">📐 9,500 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="The Modern Farmhouse" class="property-img" /><div class="property-details"><div class="property-price">$3,200,000</div><h3 class="property-title">The Modern Farmhouse</h3><div class="property-address">📍 400 Oak Lane, Austin, TX</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 4,800 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Crystal Bay Retreat" class="property-img" /><div class="property-details"><div class="property-price">$9,400,000</div><h3 class="property-title">Crystal Bay Retreat</h3><div class="property-address">📍 55 Lakefront Way, Lake Tahoe, NV</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 7,200 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Silicon Valley Compound" class="property-img" /><div class="property-details"><div class="property-price">$18,500,000</div><h3 class="property-title">Silicon Valley Compound</h3><div class="property-address">📍 1 Tech Boulevard, Atherton, CA</div><div class="property-specs"><div class="spec-item">🛏️ 8 Beds</div><div class="spec-item">🛁 11 Baths</div><div class="spec-item">📐 15,000 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="Historic Brownstone" class="property-img" /><div class="property-details"><div class="property-price">$6,900,000</div><h3 class="property-title">Historic Brownstone</h3><div class="property-address">📍 12 Park Ave, Brooklyn, NY</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 4,100 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2092&auto=format&fit=crop" alt="Miami Vice Penthouse" class="property-img" /><div class="property-details"><div class="property-price">$11,200,000</div><h3 class="property-title">Miami Vice Penthouse</h3><div class="property-address">📍 99 Brickell Ave, Miami, FL</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 5,500 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Rocky Mountain Chalet" class="property-img" /><div class="property-details"><div class="property-price">$4,500,000</div><h3 class="property-title">Rocky Mountain Chalet</h3><div class="property-address">📍 800 Ski Resort Rd, Vail, CO</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 6,000 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="The Glass House" class="property-img" /><div class="property-details"><div class="property-price">$14,000,000</div><h3 class="property-title">The Glass House</h3><div class="property-address">📍 300 Cliffside Dr, Malibu, CA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 5 Baths</div><div class="spec-item">📐 5,800 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Southern Plantation" class="property-img" /><div class="property-details"><div class="property-price">$5,800,000</div><h3 class="property-title">Southern Plantation</h3><div class="property-address">📍 1800 Magnolia Blvd, Charleston, SC</div><div class="property-specs"><div class="spec-item">🛏️ 7 Beds</div><div class="spec-item">🛁 8 Baths</div><div class="spec-item">📐 10,200 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Seattle Skyline View" class="property-img" /><div class="property-details"><div class="property-price">$3,900,000</div><h3 class="property-title">Seattle Skyline View</h3><div class="property-address">📍 200 Queen Anne Ave, Seattle, WA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 3,800 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="The Hamptons Estate" class="property-img" /><div class="property-details"><div class="property-price">$22,000,000</div><h3 class="property-title">The Hamptons Estate</h3><div class="property-address">📍 10 Ocean Rd, East Hampton, NY</div><div class="property-specs"><div class="spec-item">🛏️ 9 Beds</div><div class="spec-item">🛁 12 Baths</div><div class="spec-item">📐 18,000 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2092&auto=format&fit=crop" alt="San Francisco Victorian" class="property-img" /><div class="property-details"><div class="property-price">$4,100,000</div><h3 class="property-title">San Francisco Victorian</h3><div class="property-address">📍 777 Painted Lady St, San Francisco, CA</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 2,900 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="The Riverfront Cabin" class="property-img" /><div class="property-details"><div class="property-price">$1,200,000</div><h3 class="property-title">The Riverfront Cabin</h3><div class="property-address">📍 45 River Road, Bozeman, MT</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 2 Baths</div><div class="spec-item">📐 2,100 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="Honolulu Paradise" class="property-img" /><div class="property-details"><div class="property-price">$8,500,000</div><h3 class="property-title">Honolulu Paradise</h3><div class="property-address">📍 888 Diamond Head Rd, Honolulu, HI</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 6,800 sqft</div></div></div></div>
-            <div class="property-card"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Boston Historic Manor" class="property-img" /><div class="property-details"><div class="property-price">$3,400,000</div><h3 class="property-title">Boston Historic Manor</h3><div class="property-address">📍 25 Beacon St, Boston, MA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 4,500 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Hilltop Mansion" class="property-img" /><div class="property-details"><div class="property-price">$7,800,000</div><h3 class="property-title">Hilltop Mansion</h3><div class="property-address">📍 110 Peak View Dr, Los Angeles, CA</div><div class="property-specs"><div class="spec-item">🛏️ 6 Beds</div><div class="spec-item">🛁 8 Baths</div><div class="spec-item">📐 9,500 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="The Modern Farmhouse" class="property-img" /><div class="property-details"><div class="property-price">$3,200,000</div><h3 class="property-title">The Modern Farmhouse</h3><div class="property-address">📍 400 Oak Lane, Austin, TX</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 4,800 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Crystal Bay Retreat" class="property-img" /><div class="property-details"><div class="property-price">$9,400,000</div><h3 class="property-title">Crystal Bay Retreat</h3><div class="property-address">📍 55 Lakefront Way, Lake Tahoe, NV</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 7,200 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Silicon Valley Compound" class="property-img" /><div class="property-details"><div class="property-price">$18,500,000</div><h3 class="property-title">Silicon Valley Compound</h3><div class="property-address">📍 1 Tech Boulevard, Atherton, CA</div><div class="property-specs"><div class="spec-item">🛏️ 8 Beds</div><div class="spec-item">🛁 11 Baths</div><div class="spec-item">📐 15,000 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="Historic Brownstone" class="property-img" /><div class="property-details"><div class="property-price">$6,900,000</div><h3 class="property-title">Historic Brownstone</h3><div class="property-address">📍 12 Park Ave, Brooklyn, NY</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 4,100 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2092&auto=format&fit=crop" alt="Miami Vice Penthouse" class="property-img" /><div class="property-details"><div class="property-price">$11,200,000</div><h3 class="property-title">Miami Vice Penthouse</h3><div class="property-address">📍 99 Brickell Ave, Miami, FL</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 5,500 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Rocky Mountain Chalet" class="property-img" /><div class="property-details"><div class="property-price">$4,500,000</div><h3 class="property-title">Rocky Mountain Chalet</h3><div class="property-address">📍 800 Ski Resort Rd, Vail, CO</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 6,000 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="The Glass House" class="property-img" /><div class="property-details"><div class="property-price">$14,000,000</div><h3 class="property-title">The Glass House</h3><div class="property-address">📍 300 Cliffside Dr, Malibu, CA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 5 Baths</div><div class="spec-item">📐 5,800 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Southern Plantation" class="property-img" /><div class="property-details"><div class="property-price">$5,800,000</div><h3 class="property-title">Southern Plantation</h3><div class="property-address">📍 1800 Magnolia Blvd, Charleston, SC</div><div class="property-specs"><div class="spec-item">🛏️ 7 Beds</div><div class="spec-item">🛁 8 Baths</div><div class="spec-item">📐 10,200 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Seattle Skyline View" class="property-img" /><div class="property-details"><div class="property-price">$3,900,000</div><h3 class="property-title">Seattle Skyline View</h3><div class="property-address">📍 200 Queen Anne Ave, Seattle, WA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 3,800 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="The Hamptons Estate" class="property-img" /><div class="property-details"><div class="property-price">$22,000,000</div><h3 class="property-title">The Hamptons Estate</h3><div class="property-address">📍 10 Ocean Rd, East Hampton, NY</div><div class="property-specs"><div class="spec-item">🛏️ 9 Beds</div><div class="spec-item">🛁 12 Baths</div><div class="spec-item">📐 18,000 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2092&auto=format&fit=crop" alt="San Francisco Victorian" class="property-img" /><div class="property-details"><div class="property-price">$4,100,000</div><h3 class="property-title">San Francisco Victorian</h3><div class="property-address">📍 777 Painted Lady St, San Francisco, CA</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 3 Baths</div><div class="spec-item">📐 2,900 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="The Riverfront Cabin" class="property-img" /><div class="property-details"><div class="property-price">$1,200,000</div><h3 class="property-title">The Riverfront Cabin</h3><div class="property-address">📍 45 River Road, Bozeman, MT</div><div class="property-specs"><div class="spec-item">🛏️ 3 Beds</div><div class="spec-item">🛁 2 Baths</div><div class="spec-item">📐 2,100 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" alt="Honolulu Paradise" class="property-img" /><div class="property-details"><div class="property-price">$8,500,000</div><h3 class="property-title">Honolulu Paradise</h3><div class="property-address">📍 888 Diamond Head Rd, Honolulu, HI</div><div class="property-specs"><div class="spec-item">🛏️ 5 Beds</div><div class="spec-item">🛁 6 Baths</div><div class="spec-item">📐 6,800 sqft</div></div></div></div>
+            <div class="property-card reveal"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Boston Historic Manor" class="property-img" /><div class="property-details"><div class="property-price">$3,400,000</div><h3 class="property-title">Boston Historic Manor</h3><div class="property-address">📍 25 Beacon St, Boston, MA</div><div class="property-specs"><div class="spec-item">🛏️ 4 Beds</div><div class="spec-item">🛁 4 Baths</div><div class="spec-item">📐 4,500 sqft</div></div></div></div>
         </div>
     </section>
 
@@ -166,5 +173,6 @@
         <div class="footer-logo">Luxe<span>Realty</span></div>
         <p class="footer-content">© 2026 Luxe Realty International. All Rights Reserved.</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
