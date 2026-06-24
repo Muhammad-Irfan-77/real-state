@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Shop All Products</title>
+    <meta name="description" content="Browse all premium fashion products at NOVA. Watches, bags, shoes, clothing and more.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .shop-header { padding: 5rem 5% 2rem; }
+        .filter-bar { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+        .filter-tag { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-muted); padding: 0.5rem 1.2rem; border-radius: 50px; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; }
+        .filter-tag:hover, .filter-tag.active { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.4); color: #A78BFA; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">N<span>OVA</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" style="color: white;">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="products.html" class="cart-btn">🛒 Cart (0)</a>
+        </div>
+    </nav>
+
+    <div class="shop-header">
+        <h1 class="section-title reveal">All Products</h1>
+        <p class="section-sub reveal">Showing 1,280 items across all categories.</p>
+        <div class="filter-bar reveal">
+            <button class="filter-tag active">All</button>
+            <button class="filter-tag">Men's Wear</button>
+            <button class="filter-tag">Women's Wear</button>
+            <button class="filter-tag">Watches</button>
+            <button class="filter-tag">Bags</button>
+            <button class="filter-tag">Footwear</button>
+            <button class="filter-tag">Eyewear</button>
+            <button class="filter-tag">Under $200</button>
+            <button class="filter-tag">On Sale</button>
+        </div>
+    </div>
+
+    <div style="padding: 0 5% 5rem;">
+        <div class="products-grid">
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">BESTSELLER</span><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" alt="Watch" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Watches</div><div class="product-name">Precision Chronograph — Midnight Edition</div><div class="product-rating">★★★★★ <span>(284)</span></div><div class="product-footer"><div><span class="product-price">$1,299</span><span class="product-old-price">$1,799</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">NEW</span><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop" alt="Bag" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Bags</div><div class="product-name">Italian Leather Tote — Obsidian Black</div><div class="product-rating">★★★★★ <span>(158)</span></div><div class="product-footer"><div><span class="product-price">$549</span><span class="product-old-price">$749</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">SALE -30%</span><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" alt="Shoes" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Sport</div><div class="product-name">AeroGlide Elite — Cloud White</div><div class="product-rating">★★★★☆ <span>(422)</span></div><div class="product-footer"><div><span class="product-price">$189</span><span class="product-old-price">$270</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=800&auto=format&fit=crop" alt="Blazer" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Men</div><div class="product-name">Structured Blazer — Charcoal Grey</div><div class="product-rating">★★★★★ <span>(97)</span></div><div class="product-footer"><div><span class="product-price">$379</span><span class="product-old-price">$499</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">LIMITED</span><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop" alt="Dress" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Women</div><div class="product-name">Silk Evening Dress — Champagne Gold</div><div class="product-rating">★★★★★ <span>(201)</span></div><div class="product-footer"><div><span class="product-price">$695</span><span class="product-old-price">$920</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800&auto=format&fit=crop" alt="Sunglasses" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Eyewear</div><div class="product-name">Monaco Aviator — Titanium Frame</div><div class="product-rating">★★★★☆ <span>(133)</span></div><div class="product-footer"><div><span class="product-price">$245</span><span class="product-old-price">$320</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">NEW</span><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800&auto=format&fit=crop" alt="Sneakers" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Sport</div><div class="product-name">Urban Stride — Carbon Grey</div><div class="product-rating">★★★★★ <span>(310)</span></div><div class="product-footer"><div><span class="product-price">$159</span><span class="product-old-price">$210</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop" alt="Backpack" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Bags</div><div class="product-name">Executive Travel Backpack — Navy</div><div class="product-rating">★★★★★ <span>(178)</span></div><div class="product-footer"><div><span class="product-price">$285</span><span class="product-old-price">$380</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+            <div class="product-card reveal"><div class="product-img-wrap"><span class="product-badge">SALE</span><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" alt="Women Fashion" class="product-img"></div><div class="product-body"><div class="product-brand">NOVA Women</div><div class="product-name">Linen Co-ord Set — Sand Beige</div><div class="product-rating">★★★★☆ <span>(89)</span></div><div class="product-footer"><div><span class="product-price">$195</span><span class="product-old-price">$280</span></div><button class="add-to-cart">Add to Cart</button></div></div></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="footer-logo">N<span>OVA</span></a>
+                <p class="footer-desc">Premium fashion and lifestyle brand, trusted by 50,000+ customers worldwide.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <a href="products.html">New Arrivals</a>
+                <a href="products.html">All Products</a>
+                <a href="products.html">Sale Items</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About NOVA</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="#">Returns</a>
+                <a href="#">Shipping</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NOVA Fashion Group. All rights reserved.</p>
+            <div class="payment-icons">
+                <span class="payment-icon">VISA</span>
+                <span class="payment-icon">MC</span>
+                <span class="payment-icon">AMEX</span>
+                <span class="payment-icon">PayPal</span>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

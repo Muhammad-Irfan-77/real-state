@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="32" fill="#050508"/>
+  <!-- Shopping bag shape -->
+  <path d="M18 26 h28 l-4 22 H22 Z" fill="#7C3AED"/>
+  <!-- Bag handle -->
+  <path d="M24 26 Q24 14 32 14 Q40 14 40 26" fill="none" stroke="#06B6D4" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Shine lines -->
+  <line x1="25" y1="34" x2="25" y2="42" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="34" x2="30" y2="42" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+</svg>
