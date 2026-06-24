@@ -7,12 +7,12 @@
     <meta name="description" content="Browse all premium fashion products at NOVA. Watches, bags, shoes, clothing and more.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <style>
         .shop-header { padding: 5rem 5% 2rem; }
         .filter-bar { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-        .filter-tag { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-muted); padding: 0.5rem 1.2rem; border-radius: 50px; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; }
-        .filter-tag:hover, .filter-tag.active { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.4); color: #A78BFA; }
+        .filter-tag { background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 0.5rem 1.2rem; border-radius: 0; cursor: pointer; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; }
+        .filter-tag:hover, .filter-tag.active { background: var(--primary); border-color: var(--primary); color: white; }
     </style>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <a href="index.html" class="logo">N<span>OVA</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html" style="color: white;">Shop</a></li>
+            <li><a href="products.html" style="color: var(--primary); font-weight: 600;">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
