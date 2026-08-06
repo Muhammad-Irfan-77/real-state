@@ -12,9 +12,9 @@
         <a href="index.html" class="logo">Luxe<span>Realty</span></a>
         <div class="nav-links" id="navLinks">
             <a href="index.html" class="active">Home</a>
-            <a href="properties.html" >Properties</a>
-            <a href="agents.html" >Agents</a>
-            <a href="about.html" >About Us</a>
+            <a href="properties.html">Properties</a>
+            <a href="agents.html">Agents</a>
+            <a href="about.html">About Us</a>
             <a href="https://realtypropflow.com/dashboard/leads?demo=true" target="_blank" style="color: #4F46E5; font-weight: bold;">Leads Dashboard</a>
         </div>
         <div class="nav-actions">
@@ -91,10 +91,18 @@
         <p class="footer-content">© 2026 Luxe Realty International. All Rights Reserved. <br/> Setting the standard in luxury real estate worldwide.</p>
     </footer>
     <script src="main.js"></script>
-    <!-- AI Chatbot by SaaS Platform -->
+
+    <!-- ── Standard Plan Chatbot (Bottom Left) ── -->
     <script>
-        window.CHATBOT_CONFIG = { botId: "demo-real-estate" };
+        window.CHATBOT_CONFIG = { botId: "demo-real-estate", plan: "standard", position: "left" };
     </script>
-    <script src="https://www.realtypropflow.com/api/embed?v=9" defer></script>
+    <script src="https://www.realtypropflow.com/api/embed?v=10"></script>
+
+    <!-- ── Premium Plan Chatbot (Bottom Right) ── -->
+    <script>
+        window.CHATBOT_CONFIG = { botId: "demo-real-estate", plan: "premium", position: "right" };
+    </script>
+    <script src="https://www.realtypropflow.com/api/embed?v=10"></script>
+
 </body>
 </html>
