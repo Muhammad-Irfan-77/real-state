@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | LuxeNest Realty</title>
+    <meta name="description" content="Browse premium real estate listings across USA and Canada. Filter by type, price, and location.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 160px 5% 80px;
+            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.95)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80') center/cover;
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 3.5rem; color: white; margin-bottom: 1rem; }
+        .page-hero p { color: var(--text-muted); font-size: 1.1rem; }
+
+        .filters-bar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 5%;
+            display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;
+        }
+        .filter-select {
+            background: var(--bg-dark); color: var(--text-main);
+            border: 1px solid var(--border); border-radius: 8px;
+            padding: 0.7rem 1.2rem; font-size: 0.9rem; font-family: var(--font-sans);
+            cursor: pointer; transition: border-color 0.3s;
+        }
+        .filter-select:focus { outline: none; border-color: var(--primary); }
+
+        .props-section { padding: 4rem 5%; }
+        .results-count { color: var(--text-muted); margin-bottom: 2rem; font-size: 0.95rem; }
+        .results-count span { color: var(--primary); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Luxe<span>Nest</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Our Agents</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="properties.html" class="cart-btn">Browse Listings</a>
+        </div>
+    </nav>
+
+    <div class="page-hero reveal">
+        <h1>Find Your <em style="color:var(--primary); font-style:italic;">Perfect</em> Property</h1>
+        <p>Explore thousands of premium listings across USA & Canada</p>
+    </div>
+
+    <div class="filters-bar">
+        <select class="filter-select">
+            <option>All Types</option>
+            <option>Condo</option>
+            <option>Detached Home</option>
+            <option>Townhouse</option>
+            <option>Villa & Luxury</option>
+            <option>Multi-family</option>
+        </select>
+        <select class="filter-select">
+            <option>Any Status</option>
+            <option>For Sale</option>
+            <option>For Rent</option>
+        </select>
+        <select class="filter-select">
+            <option>Any Price</option>
+            <option>Under $500K</option>
+            <option>$500K – $1M</option>
+            <option>$1M – $2M</option>
+            <option>$2M+</option>
+        </select>
+        <select class="filter-select">
+            <option>Any Beds</option>
+            <option>1+ Beds</option>
+            <option>2+ Beds</option>
+            <option>3+ Beds</option>
+            <option>4+ Beds</option>
+        </select>
+    </div>
+
+    <section class="props-section">
+        <p class="results-count"><span>12</span> properties found</p>
+        <div class="listings-grid">
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" alt="Modern Villa" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$4,250,000</span>
+                    <h3 class="listing-title">Modern Glass Villa</h3>
+                    <p class="listing-address">123 Bel Air Rd, Los Angeles, CA</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>4</span> Beds</div>
+                        <div class="spec"><span>5</span> Baths</div>
+                        <div class="spec"><span>4,500</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Family Home" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$850,000</span>
+                    <h3 class="listing-title">Classic Family Home</h3>
+                    <p class="listing-address">45 Maple Drive, Toronto, ON</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>3</span> Beds</div>
+                        <div class="spec"><span>2.5</span> Baths</div>
+                        <div class="spec"><span>2,100</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Rent</div>
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Penthouse" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$4,500 / mo</span>
+                    <h3 class="listing-title">Downtown Penthouse</h3>
+                    <p class="listing-address">88 Queens Quay, Toronto, ON</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>2</span> Beds</div>
+                        <div class="spec"><span>2</span> Baths</div>
+                        <div class="spec"><span>1,200</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80" alt="Suburban" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$1,200,000</span>
+                    <h3 class="listing-title">Luxury Suburban Estate</h3>
+                    <p class="listing-address">10 Willow Lane, Vancouver, BC</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>5</span> Beds</div>
+                        <div class="spec"><span>4</span> Baths</div>
+                        <div class="spec"><span>3,800</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="Contemporary" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$680,000</span>
+                    <h3 class="listing-title">Contemporary Condo</h3>
+                    <p class="listing-address">500 Lake Shore Blvd, Chicago, IL</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>2</span> Beds</div>
+                        <div class="spec"><span>2</span> Baths</div>
+                        <div class="spec"><span>1,050</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="listing-card reveal">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Rent</div>
+                    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80" alt="Townhouse" class="listing-img">
+                </div>
+                <div class="listing-details">
+                    <span class="listing-price">$3,200 / mo</span>
+                    <h3 class="listing-title">Modern Townhouse</h3>
+                    <p class="listing-address">22 Park Ave, New York, NY</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>3</span> Beds</div>
+                        <div class="spec"><span>2.5</span> Baths</div>
+                        <div class="spec"><span>1,650</span> sqft</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div style="text-align:center; margin-top: 4rem; padding: 3rem; background: var(--bg-card); border-radius: 16px; border: 1px dashed var(--border);">
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                Looking for something specific? Ask our AI chatbot for live MLS results!
+            </p>
+            <p style="color: var(--primary); font-weight: 600;">💬 Click "Chat with us" in the bottom right corner</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 LuxeNest Realty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <script>
+        window.CHATBOT_CONFIG = { botId: "demo-real-estate-live" };
+    </script>
+    <script src="https://www.realtypropflow.com/api/embed" defer></script>
+    <script src="main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.style.animationPlayState = 'running'; });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => { el.style.animationPlayState = 'paused'; observer.observe(el); });
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            nav.style.padding = window.scrollY > 50 ? '0.8rem 5%' : '1.2rem 5%';
+            nav.style.background = window.scrollY > 50 ? 'rgba(10,10,10,0.95)' : 'rgba(10,10,10,0.7)';
+        });
+    </script>
+</body>
+</html>

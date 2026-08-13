@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Agents | LuxeNest Realty</title>
+    <meta name="description" content="Meet the LuxeNest team — expert real estate agents across USA and Canada.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 160px 5% 80px;
+            background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.95)),
+                        url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1600&q=80') center/cover;
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 3.5rem; color: white; margin-bottom: 1rem; }
+        .page-hero p { color: var(--text-muted); font-size: 1.1rem; }
+
+        .agents-section { padding: 6rem 5%; }
+        .agents-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem; }
+
+        .agent-card {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+            overflow: hidden; transition: all 0.4s ease; text-align: center;
+        }
+        .agent-card:hover { transform: translateY(-10px); border-color: rgba(203,161,83,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+
+        .agent-img {
+            width: 100%; height: 280px; object-fit: cover; object-position: top;
+            transition: transform 0.5s ease;
+        }
+        .agent-card:hover .agent-img { transform: scale(1.05); }
+        .agent-img-wrap { overflow: hidden; }
+
+        .agent-info { padding: 1.8rem; }
+        .agent-name { font-family: var(--font-serif); font-size: 1.5rem; color: white; margin-bottom: 0.3rem; }
+        .agent-title { color: var(--primary); font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .agent-bio { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; }
+        .agent-stats { display: flex; justify-content: center; gap: 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
+        .agent-stat-val { font-family: var(--font-serif); font-size: 1.5rem; color: var(--primary); display: block; }
+        .agent-stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+        .agent-contact { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+        .agent-btn {
+            padding: 0.6rem 1.4rem; border-radius: 30px; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+            transition: all 0.3s; border: 1px solid var(--primary); background: transparent; color: var(--primary);
+        }
+        .agent-btn:hover { background: var(--primary); color: var(--bg-dark); }
+        .agent-btn.solid { background: var(--primary); color: var(--bg-dark); }
+        .agent-btn.solid:hover { background: var(--primary-hover); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Luxe<span>Nest</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Our Agents</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="properties.html" class="cart-btn">Browse Listings</a>
+        </div>
+    </nav>
+
+    <div class="page-hero reveal">
+        <h1>Meet Our <em style="color:var(--primary); font-style:italic;">Expert</em> Agents</h1>
+        <p>Award-winning professionals dedicated to finding your perfect home</p>
+    </div>
+
+    <section class="agents-section">
+        <div class="agents-grid">
+
+            <div class="agent-card reveal">
+                <div class="agent-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="James Mitchell" class="agent-img">
+                </div>
+                <div class="agent-info">
+                    <h3 class="agent-name">James Mitchell</h3>
+                    <p class="agent-title">Senior Realtor — California</p>
+                    <p class="agent-bio">Specializes in luxury homes across Beverly Hills, Malibu, and Greater Los Angeles with 15+ years of experience.</p>
+                    <div class="agent-stats">
+                        <div><span class="agent-stat-val">342</span><span class="agent-stat-lbl">Sales</span></div>
+                        <div><span class="agent-stat-val">$2.1B</span><span class="agent-stat-lbl">Volume</span></div>
+                    </div>
+                    <div class="agent-contact">
+                        <a href="tel:+13109990101" class="agent-btn">Call</a>
+                        <a href="mailto:james@luxenest.com" class="agent-btn solid">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agent-card reveal">
+                <div class="agent-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80" alt="Sophia Chen" class="agent-img">
+                </div>
+                <div class="agent-info">
+                    <h3 class="agent-name">Sophia Chen</h3>
+                    <p class="agent-title">Luxury Specialist — Toronto</p>
+                    <p class="agent-bio">Expert in Toronto's upscale condo market and Ontario suburban estates. Bilingual in English and Mandarin.</p>
+                    <div class="agent-stats">
+                        <div><span class="agent-stat-val">280</span><span class="agent-stat-lbl">Sales</span></div>
+                        <div><span class="agent-stat-val">$890M</span><span class="agent-stat-lbl">Volume</span></div>
+                    </div>
+                    <div class="agent-contact">
+                        <a href="tel:+14169990202" class="agent-btn">Call</a>
+                        <a href="mailto:sophia@luxenest.com" class="agent-btn solid">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agent-card reveal">
+                <div class="agent-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="Marcus Davis" class="agent-img">
+                </div>
+                <div class="agent-info">
+                    <h3 class="agent-name">Marcus Davis</h3>
+                    <p class="agent-title">Investment Expert — New York</p>
+                    <p class="agent-bio">Focused on NYC investment properties and multi-family homes. Helped 100+ investors grow their portfolios.</p>
+                    <div class="agent-stats">
+                        <div><span class="agent-stat-val">415</span><span class="agent-stat-lbl">Sales</span></div>
+                        <div><span class="agent-stat-val">$3.4B</span><span class="agent-stat-lbl">Volume</span></div>
+                    </div>
+                    <div class="agent-contact">
+                        <a href="tel:+12129990303" class="agent-btn">Call</a>
+                        <a href="mailto:marcus@luxenest.com" class="agent-btn solid">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agent-card reveal">
+                <div class="agent-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80" alt="Isabella Torres" class="agent-img">
+                </div>
+                <div class="agent-info">
+                    <h3 class="agent-name">Isabella Torres</h3>
+                    <p class="agent-title">Relocation Specialist — Vancouver</p>
+                    <p class="agent-bio">Expert in Vancouver and Greater BC real estate. Fluent in English, Spanish, and French.</p>
+                    <div class="agent-stats">
+                        <div><span class="agent-stat-val">190</span><span class="agent-stat-lbl">Sales</span></div>
+                        <div><span class="agent-stat-val">$620M</span><span class="agent-stat-lbl">Volume</span></div>
+                    </div>
+                    <div class="agent-contact">
+                        <a href="tel:+16049990404" class="agent-btn">Call</a>
+                        <a href="mailto:isabella@luxenest.com" class="agent-btn solid">Email</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 LuxeNest Realty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.CHATBOT_CONFIG = { botId: "demo-real-estate-live" };
+    </script>
+    <script src="https://www.realtypropflow.com/api/embed" defer></script>
+    <script src="main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.style.animationPlayState = 'running'; });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => { el.style.animationPlayState = 'paused'; observer.observe(el); });
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            nav.style.padding = window.scrollY > 50 ? '0.8rem 5%' : '1.2rem 5%';
+            nav.style.background = window.scrollY > 50 ? 'rgba(10,10,10,0.95)' : 'rgba(10,10,10,0.7)';
+        });
+    </script>
+</body>
+</html>

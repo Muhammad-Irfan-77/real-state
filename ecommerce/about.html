@@ -3,97 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOVA | About Us</title>
+    <title>About Us | LuxeNest Realty</title>
+    <meta name="description" content="Learn about LuxeNest Realty — our story, mission, and the values that drive us.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .page-hero {
+            padding: 160px 5% 80px;
+            background: linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.95)),
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80') center/cover;
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 3.5rem; color: white; margin-bottom: 1rem; }
+        .page-hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+        .about-section { padding: 6rem 5%; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+        .about-img { width: 100%; border-radius: 16px; border: 1px solid var(--border); }
+        .about-text h2 { font-size: 2.8rem; color: white; margin-bottom: 1.5rem; }
+        .about-text h2 span { color: var(--primary); font-style: italic; }
+        .about-text p { color: var(--text-muted); line-height: 1.9; margin-bottom: 1.5rem; }
+
+        .values-section { padding: 6rem 5%; background: var(--bg-card); border-top: 1px solid var(--border); }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 4rem; }
+        .value-card {
+            background: var(--bg-dark); border: 1px solid var(--border); border-radius: 16px;
+            padding: 2.5rem; transition: all 0.3s;
+        }
+        .value-card:hover { border-color: rgba(203,161,83,0.4); transform: translateY(-8px); }
+        .value-icon { font-size: 2.5rem; margin-bottom: 1.5rem; display: block; }
+        .value-card h3 { font-size: 1.4rem; color: white; margin-bottom: 0.8rem; }
+        .value-card p { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; }
+
+        .cta-section {
+            padding: 8rem 5%; text-align: center;
+            background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)),
+                        url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80') center/cover fixed;
+        }
+        .cta-section h2 { font-size: 3rem; color: white; margin-bottom: 1.5rem; }
+        .cta-section p { color: var(--text-muted); max-width: 560px; margin: 0 auto 3rem; font-size: 1.1rem; }
+        .cta-btns { display: flex; gap: 1.5rem; justify-content: center; }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo">N<span>OVA</span></a>
+        <a href="index.html" class="logo">Luxe<span>Nest</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Shop</a></li>
-            <li><a href="about.html" style="color: var(--primary); font-weight: 600;">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Our Agents</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
         <div class="nav-actions">
-            <a href="products.html" class="cart-btn">🛒 Shop Now</a>
+            <a href="properties.html" class="cart-btn">Browse Listings</a>
         </div>
     </nav>
 
-    <div class="about-hero">
-        <h1>Where Style<br><em>Meets Purpose.</em></h1>
+    <!-- PAGE HERO -->
+    <div class="page-hero reveal">
+        <h1>About <em style="color:var(--primary); font-style:italic;">LuxeNest</em></h1>
+        <p>Where luxury real estate meets cutting-edge AI technology</p>
     </div>
 
-    <div class="about-section">
-        <div class="reveal">
-            <h2>How NOVA Started</h2>
-            <p>Founded in 2019 in Milan, NOVA began as a small collective of designers who believed that premium fashion shouldn't require compromising on ethics or breaking the bank. Our founders, Sarah Delacroix and Marco Ferretti, wanted to create a brand that stood at the intersection of craft, sustainability, and modern elegance.</p>
-            <p>What started as a 12-piece capsule collection on a rented runway quickly grew into one of the most sought-after lifestyle brands of the decade. Today, NOVA serves over 50,000 customers across 32 countries, with flagship stores in Milan, Dubai, and New York.</p>
-        </div>
-
-        <div class="reveal" style="margin-top: 3rem;">
-            <h2>Our Philosophy</h2>
-            <p>Every NOVA product is designed with a singular belief: that the clothes you wear should make you feel extraordinary. We source only the finest materials — Italian leather, Egyptian cotton, Swiss-grade hardware — and every stitch is reviewed by our master craftspeople before it reaches you.</p>
-            <p>We refuse to rush our collections. Every season, we release a curated range of items that are built to last years, not one season. This is slow fashion done right.</p>
-        </div>
-
-        <div class="values-grid reveal">
-            <div class="value-card">
-                <div class="value-icon">🌿</div>
-                <div class="value-title">Sustainably Sourced</div>
-                <div class="value-desc">All materials are ethically sourced from certified suppliers.</div>
-            </div>
-            <div class="value-card">
-                <div class="value-icon">🛠️</div>
-                <div class="value-title">Expert Craftsmanship</div>
-                <div class="value-desc">Every product passes a 14-point quality inspection.</div>
-            </div>
-            <div class="value-card">
-                <div class="value-icon">🌍</div>
-                <div class="value-title">Global Delivery</div>
-                <div class="value-desc">Free express shipping to 32 countries worldwide.</div>
-            </div>
-            <div class="value-card">
-                <div class="value-icon">🔄</div>
-                <div class="value-title">30-Day Returns</div>
-                <div class="value-desc">No questions asked return policy for peace of mind.</div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-grid">
+    <!-- OUR STORY -->
+    <section class="about-section">
+        <div class="about-grid reveal">
             <div>
-                <a href="index.html" class="footer-logo">N<span>OVA</span></a>
-                <p class="footer-desc">Premium fashion and lifestyle brand, trusted by 50,000+ customers worldwide.</p>
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80" alt="LuxeNest Office" class="about-img">
             </div>
-            <div class="footer-col">
-                <h4>Shop</h4>
-                <a href="products.html">New Arrivals</a>
-                <a href="products.html">All Products</a>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <a href="about.html">About NOVA</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Help</h4>
-                <a href="#">Returns</a>
-                <a href="#">FAQ</a>
+            <div class="about-text">
+                <h2>How LuxeNest <span>Started</span></h2>
+                <p>Founded in 2018 with a single vision — to make finding your perfect home as effortless as possible. We saw a broken real estate market filled with outdated listings and inaccessible expertise, and decided to change it.</p>
+                <p>Today, LuxeNest is one of the fastest-growing real estate platforms serving buyers, sellers, and renters across the United States and Canada. Our team of 200+ licensed agents combined with our proprietary AI chatbot gives every client a premium, personalized experience.</p>
+                <p>We are not just a listing platform — we are your dedicated partner in every step of your real estate journey.</p>
+                <a href="agents.html" class="btn-primary" style="display:inline-block; margin-top:1rem;">Meet Our Team</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 NOVA Fashion Group. All rights reserved.</p>
-            <div class="payment-icons">
-                <span class="payment-icon">VISA</span>
-                <span class="payment-icon">MC</span>
-                <span class="payment-icon">AMEX</span>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="values-section">
+        <div style="text-align:center;" class="reveal">
+            <h2 class="section-title">Our <span>Values</span></h2>
+            <p class="section-sub" style="margin: 0 auto 0;">The principles that guide every decision we make.</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card reveal">
+                <span class="value-icon">🏆</span>
+                <h3>Excellence</h3>
+                <p>We hold ourselves to the highest standards in every listing, every interaction, and every deal. Nothing less than exceptional is acceptable.</p>
             </div>
+            <div class="value-card reveal">
+                <span class="value-icon">🤝</span>
+                <h3>Trust & Transparency</h3>
+                <p>Real estate is the biggest financial decision of most people's lives. We commit to honest advice, clear pricing, and zero hidden fees.</p>
+            </div>
+            <div class="value-card reveal">
+                <span class="value-icon">🤖</span>
+                <h3>AI-Powered Innovation</h3>
+                <p>Our proprietary AI searches live MLS data in seconds, so you never browse stale listings. Technology that works for you, 24/7.</p>
+            </div>
+            <div class="value-card reveal">
+                <span class="value-icon">🌍</span>
+                <h3>Community First</h3>
+                <p>We believe in building stronger communities — not just selling houses. Every neighborhood we serve, we invest in.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2 class="reveal">Ready to Find <em style="color:var(--primary); font-style:italic;">Your Home?</em></h2>
+        <p class="reveal">Browse thousands of listings or simply chat with our AI — describe what you're looking for and let us do the work.</p>
+        <div class="cta-btns reveal">
+            <a href="properties.html" class="btn-primary">Explore Listings</a>
+            <a href="agents.html" class="btn-secondary">Talk to an Agent</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 LuxeNest Realty. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        window.CHATBOT_CONFIG = { botId: "demo-real-estate-live" };
+    </script>
+    <script src="https://www.realtypropflow.com/api/embed" defer></script>
     <script src="main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.style.animationPlayState = 'running'; });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => { el.style.animationPlayState = 'paused'; observer.observe(el); });
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            nav.style.padding = window.scrollY > 50 ? '0.8rem 5%' : '1.2rem 5%';
+            nav.style.background = window.scrollY > 50 ? 'rgba(10,10,10,0.95)' : 'rgba(10,10,10,0.7)';
+        });
+    </script>
 </body>
 </html>
