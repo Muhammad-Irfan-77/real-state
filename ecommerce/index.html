@@ -7,8 +7,6 @@
     <meta name="description" content="Discover premium real estate listings across USA and Canada. Buy, sell, or rent your perfect home with LuxeNest Realty — powered by AI.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +20,7 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <div class="nav-actions">
-            <a href="properties.html" class="cart-btn">🏠 Browse Listings</a>
+            <a href="properties.html" class="cart-btn">Browse Listings</a>
         </div>
     </nav>
 
@@ -30,7 +28,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-badge">
-                🤖 AI-Powered Property Search — Live MLS Data
+                AI-Powered Property Search
             </div>
             <h1>
                 Find Your<br>
@@ -67,7 +65,7 @@
     <!-- PROPERTY TYPES -->
     <section class="section">
         <div class="reveal">
-            <h2 class="section-title">Browse by Property Type</h2>
+            <h2 class="section-title">Browse by <span>Property Type</span></h2>
             <p class="section-sub">From cozy condos to luxury estates — find the perfect match for your lifestyle.</p>
         </div>
         <div class="categories-grid reveal">
@@ -93,206 +91,148 @@
             </a>
             <a href="properties.html?type=duplex" class="cat-card">
                 <span class="cat-icon">🏗️</span>
-                <div class="cat-name">Duplex & Multi-family</div>
+                <div class="cat-name">Multi-family</div>
                 <div class="cat-count">310+ listings</div>
             </a>
         </div>
     </section>
 
-    <!-- FEATURED LISTINGS -->
-    <section class="section" style="padding-top: 0;">
+    <!-- FEATURED PROPERTIES -->
+    <section class="section" style="background-color: var(--bg-card); border-top: 1px solid var(--border);">
         <div class="reveal">
-            <h2 class="section-title">Featured Listings</h2>
-            <p class="section-sub">Hand-picked premium properties across USA & Canada. Updated daily from live MLS.</p>
+            <h2 class="section-title">Featured <span>Listings</span></h2>
+            <p class="section-sub">Hand-picked premium properties across USA & Canada. Updated daily.</p>
         </div>
-        <div class="products-grid">
-            <!-- Listing 1 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <span class="product-badge">FOR SALE</span>
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Modern Toronto Home" class="product-img">
+        
+        <div class="listings-grid reveal">
+            <!-- Property 1 -->
+            <a href="#" class="listing-card">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" alt="Beverly Hills Mansion" class="listing-img">
                 </div>
-                <div class="product-body">
-                    <div class="product-brand">Toronto, ON 🇨🇦</div>
-                    <div class="product-name">Modern 4-Bedroom Detached — Midtown</div>
-                    <div class="product-rating">🛏️ 4 Beds &nbsp;|&nbsp; 🚿 3 Baths &nbsp;|&nbsp; 📐 2,800 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$1,349,000</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
+                <div class="listing-details">
+                    <span class="listing-price">$4,250,000</span>
+                    <h3 class="listing-title">Modern Glass Villa</h3>
+                    <p class="listing-address">123 Bel Air Rd, Los Angeles, CA</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>4</span> Beds</div>
+                        <div class="spec"><span>5</span> Baths</div>
+                        <div class="spec"><span>4,500</span> SqFt</div>
                     </div>
                 </div>
-            </div>
-            <!-- Listing 2 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <span class="product-badge">FOR RENT</span>
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Vancouver Condo" class="product-img">
+            </a>
+
+            <!-- Property 2 -->
+            <a href="#" class="listing-card">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Sale</div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80" alt="Suburban Home" class="listing-img">
                 </div>
-                <div class="product-body">
-                    <div class="product-brand">Vancouver, BC 🇨🇦</div>
-                    <div class="product-name">Luxury 2-Bed Condo — Downtown Core</div>
-                    <div class="product-rating">🛏️ 2 Beds &nbsp;|&nbsp; 🚿 2 Baths &nbsp;|&nbsp; 📐 1,100 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$3,800/mo</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
+                <div class="listing-details">
+                    <span class="listing-price">$850,000</span>
+                    <h3 class="listing-title">Classic Family Home</h3>
+                    <p class="listing-address">45 Maple Drive, Toronto, ON</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>3</span> Beds</div>
+                        <div class="spec"><span>2.5</span> Baths</div>
+                        <div class="spec"><span>2,100</span> SqFt</div>
                     </div>
                 </div>
-            </div>
-            <!-- Listing 3 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <span class="product-badge">HOT DEAL</span>
-                    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80" alt="Chicago Home" class="product-img">
+            </a>
+
+            <!-- Property 3 -->
+            <a href="#" class="listing-card">
+                <div class="listing-img-wrapper">
+                    <div class="listing-badge">For Rent</div>
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Luxury Condo" class="listing-img">
                 </div>
-                <div class="product-body">
-                    <div class="product-brand">Chicago, IL 🇺🇸</div>
-                    <div class="product-name">Elegant 5-Bed Family Home — Lincoln Park</div>
-                    <div class="product-rating">🛏️ 5 Beds &nbsp;|&nbsp; 🚿 4 Baths &nbsp;|&nbsp; 📐 3,500 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$875,000</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
+                <div class="listing-details">
+                    <span class="listing-price">$4,500 / mo</span>
+                    <h3 class="listing-title">Downtown Penthouse</h3>
+                    <p class="listing-address">88 Queens Quay, Toronto, ON</p>
+                    <div class="listing-specs">
+                        <div class="spec"><span>2</span> Beds</div>
+                        <div class="spec"><span>2</span> Baths</div>
+                        <div class="spec"><span>1,200</span> SqFt</div>
                     </div>
                 </div>
-            </div>
-            <!-- Listing 4 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Calgary Home" class="product-img">
-                </div>
-                <div class="product-body">
-                    <div class="product-brand">Calgary, AB 🇨🇦</div>
-                    <div class="product-name">Spacious 3-Bed Townhouse — NW Calgary</div>
-                    <div class="product-rating">🛏️ 3 Beds &nbsp;|&nbsp; 🚿 2.5 Baths &nbsp;|&nbsp; 📐 1,900 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$589,000</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Listing 5 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <span class="product-badge">JUST LISTED</span>
-                    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80" alt="Miami Villa" class="product-img">
-                </div>
-                <div class="product-body">
-                    <div class="product-brand">Miami, FL 🇺🇸</div>
-                    <div class="product-name">Waterfront Luxury Villa — Brickell Bay</div>
-                    <div class="product-rating">🛏️ 6 Beds &nbsp;|&nbsp; 🚿 5 Baths &nbsp;|&nbsp; 📐 5,200 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$2,450,000</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Listing 6 -->
-            <div class="product-card reveal">
-                <div class="product-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Mississauga" class="product-img">
-                </div>
-                <div class="product-body">
-                    <div class="product-brand">Mississauga, ON 🇨🇦</div>
-                    <div class="product-name">Brand New 4-Bed Semi-Detached — Port Credit</div>
-                    <div class="product-rating">🛏️ 4 Beds &nbsp;|&nbsp; 🚿 3 Baths &nbsp;|&nbsp; 📐 2,200 sqft</div>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">$998,000</span>
-                        </div>
-                        <button class="add-to-cart" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Ask AI 🤖</button>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="properties.html" class="btn-primary" style="display: inline-flex;">View All Listings →</a>
+        <div style="text-align: center; margin-top: 4rem;" class="reveal">
+            <a href="properties.html" class="btn-primary">View All Properties</a>
         </div>
     </section>
 
-    <!-- AI PROMO BANNER -->
-    <div class="promo-banner reveal">
-        <div class="promo-text">
-            <h2>🤖 Search Live Properties with AI</h2>
-            <p>Just tell our AI chatbot what you're looking for — city, bedrooms, budget — and it will pull live MLS listings from Zillow in seconds. No browsing required.</p>
-        </div>
-        <div class="promo-code">
-            <div class="code">Try AI Now</div>
-            <div class="code-label">Click the chat icon in the bottom right</div>
-        </div>
-    </div>
-
-    <!-- WHY US -->
-    <div class="newsletter reveal" style="margin-top: 5rem;">
-        <h2>Why Choose LuxeNest?</h2>
-        <p>We combine the power of AI with real-time MLS data to give you a smarter home search experience. Our AI chatbot searches live Zillow and Realtor.ca listings the moment you describe your dream home.</p>
-        <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem;">
-            <div style="background:rgba(255,255,255,0.1); border-radius:12px; padding:1.2rem 1.8rem; min-width:180px; text-align:center;">
-                <div style="font-size:2rem;">🔍</div>
-                <div style="font-weight:700; margin-top:0.5rem;">Live MLS Search</div>
-            </div>
-            <div style="background:rgba(255,255,255,0.1); border-radius:12px; padding:1.2rem 1.8rem; min-width:180px; text-align:center;">
-                <div style="font-size:2rem;">🇨🇦🇺🇸</div>
-                <div style="font-weight:700; margin-top:0.5rem;">USA & Canada</div>
-            </div>
-            <div style="background:rgba(255,255,255,0.1); border-radius:12px; padding:1.2rem 1.8rem; min-width:180px; text-align:center;">
-                <div style="font-size:2rem;">⚡</div>
-                <div style="font-weight:700; margin-top:0.5rem;">30-Second Results</div>
-            </div>
-        </div>
-    </div>
-
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
         <div class="footer-grid">
-            <div>
+            <div class="footer-col">
                 <a href="index.html" class="footer-logo">Luxe<span>Nest</span></a>
-                <p class="footer-desc">Premium real estate search across USA & Canada — powered by AI and live MLS data. Your dream home is one conversation away.</p>
+                <p>The premium real estate platform powered by Artificial Intelligence. Connecting buyers, sellers, and renters with their perfect homes.</p>
             </div>
             <div class="footer-col">
                 <h4>Properties</h4>
-                <a href="properties.html">Buy a Home</a>
-                <a href="properties.html">Rent a Home</a>
-                <a href="properties.html">New Listings</a>
-                <a href="properties.html">Luxury Homes</a>
+                <ul>
+                    <li><a href="#">Homes for Sale</a></li>
+                    <li><a href="#">Homes for Rent</a></li>
+                    <li><a href="#">Luxury Villas</a></li>
+                    <li><a href="#">Commercial</a></li>
+                </ul>
             </div>
             <div class="footer-col">
                 <h4>Company</h4>
-                <a href="about.html">About LuxeNest</a>
-                <a href="agents.html">Our Agents</a>
-                <a href="about.html">Careers</a>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Agents</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-col">
-                <h4>Support</h4>
-                <a href="#" onclick="document.querySelector('#realty-prop-global-bot .chat-bubble-btn')?.click()">Chat with AI</a>
-                <a href="#">Buyer Guide</a>
-                <a href="#">Seller Guide</a>
-                <a href="#">FAQ</a>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Fair Housing</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 LuxeNest Realty. All rights reserved.</p>
-            <div class="payment-icons">
-                <span class="payment-icon">🇨🇦 Canada</span>
-                <span class="payment-icon">🇺🇸 USA</span>
-            </div>
+            <p>&copy; 2026 LuxeNest Realty. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- Chat Widget Script Placeholder -->
+    <!-- <script src="https://real-state-23j6.vercel.app/api/embed?bot_id=YOUR_BOT_ID" defer></script> -->
 
-    <!-- AI Chatbot — Premium Live Property Search -->
+    <script src="main.js"></script>
     <script>
-        window.CHATBOT_CONFIG = { botId: "demo-real-estate-live" };
+        // Simple reveal animation observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.style.padding = '0.8rem 5%';
+                nav.style.background = 'rgba(10, 10, 10, 0.9)';
+            } else {
+                nav.style.padding = '1.2rem 5%';
+                nav.style.background = 'rgba(10, 10, 10, 0.7)';
+            }
+        });
     </script>
-    <script src="https://www.realtypropflow.com/api/embed" defer></script>
 </body>
 </html>
